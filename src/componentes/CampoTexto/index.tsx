@@ -8,7 +8,7 @@ interface CampoTextoProps {
     valor: string
 }
 
-const CampoTexto = ({aoAlterado, label, placeholder, obrigatorio, valor} :CampoTextoProps) => {
+const CampoTexto = ({aoAlterado, label, placeholder, obrigatorio = false, valor} :CampoTextoProps) => {
 
     const placeholderModificada = `${placeholder}...` 
 
